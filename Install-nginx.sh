@@ -8,7 +8,7 @@ sudo yum install -y nginx
 sudo service nginx start
 
 # stop nginx daemon
-#sudo service nginx start
+#sudo service nginx stop
 
 # restart nginx daemon
 #sudo service nginx restart
