@@ -1,2 +1,2 @@
-CentOSScripts
+CentOS Scripts
 =============
