@@ -1,0 +1,6 @@
+$ sudo npm install -g nodemon
+$ sudo npm install -g express
+$ sudo npm install socket.io
+
+# from package.repo
+$ npm install
