@@ -18,3 +18,9 @@ openssl req -new -key [private].key -out [filename].csr
 
 # OR
 # openssl req -new -newkey rsa:2048 -nodes -out www_xxxx_com.csr -keyout www_xxxx_com.key -subj # "/C=US/ST=Maryland/L=Bethesda/O=Ideation816 Corp/OU=IT/CN=www.XXXX.com"
+
+
+
+# test SSLV2 and SSLV3
+openssl s_client -connect f.q.d.n:443 -ssl2
+openssl s_client -connect f.q.d.n:443 -ssl3
