@@ -17,3 +17,18 @@ class MyClass(x: Int, y: Int) {           // Defines a new type MyClass with a c
 
 new MyClass(1, 2) // creates a new object of type
 ```
+
+
+```java 
+abstract class TopLevel {       // abstract class  
+  def method1(x: Int): Int      // abstract method  
+  def method2(x: Int): Int = { ... }  
+}
+
+class Level1 extends TopLevel {  
+  def method1(x: Int): Int = { ... }  
+  override def method2(x: Int): Int = { ...} // TopLevel's method2 needs to be explicitly overridden  
+}
+
+object MyObject extends TopLevel { ... }      // defines a singleton object. No other instance can be created
+```
