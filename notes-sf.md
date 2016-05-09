@@ -30,3 +30,46 @@ AND s.cd_id = c.cd_id
 AND c.column_name = 'my_col'
 order by create_time
 ```
+
+```java
+public String getLocationForTable(String db, String table) {
+    HiveConf hiveConf = new HiveConf(SessionState.class);
+    HiveMetaStoreClient client = null;
+    try {
+        client = new HiveMetaStoreClient(hiveConf);
+    } catch (MetaException e) {
+        throw new RuntimeException("getting location for " + db + " "
+                                   + table, e);
+    }
+    org.apache.hadoop.hive.metastore.api.Table t = null;
+    try {
+        t = client.getTable(db, table);
+    } catch (MetaException e) {
+        throw new RuntimeException("getting location for " + db + " "
+                                   + table, e);
+    } catch (TException e) {
+        throw new RuntimeException("getting location for " + db + " "
+                                   + table, e);
+    } catch (NoSuchObjectException e) {
+        throw new RuntimeException("getting location for " + db + " "
+                                   + table, e);
+    }
+    StorageDescriptor sd = t.getSd();
+
+    return anonymizeHostname(sd.getLocation());
+}
+```
+
+```java
+public static void assertTableIsExternal(
+    HiveMetaStoreClient client, String db, String name)
+    throws MetaException, TException {
+  final Table table = client.getTable(db, name);
+  Assert.assertTrue("Table should be external db:" + db + " table:" + table,
+      MetaStoreUtils.isExternalTable(table) &&
+      TableType.EXTERNAL_TABLE.toString().equals(table.getTableType()));
+}
+```
+
+http://www.programcreek.com/java-api-examples/index.php?api=org.apache.hadoop.hive.metastore.HiveMetaStoreClient
+
