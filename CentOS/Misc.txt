@@ -1,2 +1,0 @@
-# check memory usage
-$ free -m
