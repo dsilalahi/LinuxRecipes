@@ -9,4 +9,9 @@ find <dir_name> -type f | wc -l
 
 # count # of lines in a file
 cat <filename> | wc -l
+
+# find java
+find -name "*.java" -exec cat {} \;
 ```
+
+
