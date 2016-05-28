@@ -1,0 +1,8 @@
+- Review Hadoop Requirements 
+- Review Hardware and Provisioning 
+- Evaluate Data Sources and Integration Points 
+- Prototype Hadoop Architecture 
+- Design and Implement Data Storage, Schema and Partitioning System 
+- Design and Implement Data Integration Processes 
+- Design and Implement Descriptive Analytics Process 
+- Author Descriptive Analytics Pilot Documentation
