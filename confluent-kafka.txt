@@ -16,4 +16,18 @@ $ kafka-console-consumer \
 --from-beginning \
 --topic testing
 
+$ kafka-console-consumer \
+--bootstrap-server broker101:9092 \
+--from-beginning \
+--topic testing \
+--property print.key=true
+
 ```sh
+
+
+$ zookeeper-shell zookeeper1
+
+# from zookeeper-shell
+ls /
+ls /brokers
+ls /brokers/ids
