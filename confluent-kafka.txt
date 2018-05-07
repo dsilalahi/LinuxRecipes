@@ -1,3 +1,4 @@
+```sh
 $ sudo jps # listing java processes
 
 # producer
@@ -15,4 +16,4 @@ $ kafka-console-consumer \
 --from-beginning \
 --topic testing
 
-
+```sh
