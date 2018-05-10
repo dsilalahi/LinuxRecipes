@@ -53,3 +53,29 @@ $ kafka-console-consumer \
 --from-beginning \
 --topic two-p-topic
 
+
+# #######################################################################
+$ sudo connect-distributed -daemon /etc/kafka/connect-distributed.properties
+$ kafka-topics \
+--zookeeper zookeeper1:2181 \
+--create \
+--topic shakespeare_years \
+--partitions 1 \
+--replication-factor 1
+Created topic "shakespeare_years".
+
+$ echo "SELECT * FROM years;" | sqlite3 /usr/local/lib/my.db
+
+$ confluent_control_center_hard_reset.sh
+$ sudo jps | grep -i ControlCenter
+
+
+$ echo "INSERT INTO years(name,year) VALUES('Tempest',1611);" | \
+sudo sqlite3 /usr/local/lib/my.db
+$ echo "INSERT INTO years(name,year) VALUES('King Lear',1605);" | \
+sudo sqlite3 /usr/local/lib/my.db
+
+
+
+
+
