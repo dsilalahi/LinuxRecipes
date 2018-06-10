@@ -76,6 +76,9 @@ $ echo "INSERT INTO years(name,year) VALUES('King Lear',1605);" | \
 sudo sqlite3 /usr/local/lib/my.db
 
 
-
+URL
+==================
+https://docs.confluent.io/current/kafka/monitoring.html
+https://docs.confluent.io/current/control-center/docs/userguide.html
 
 
