@@ -1,3 +1,9 @@
+# ~/.bash_profile
+PATH=$PATH:$HOME/bin:$JAVA_HOME/bin
+
+export PATH
+
+# ~/.bashrc
 export JAVA_HOME="/local/java/jdk1.8.0_121/"
 PATH=$PATH:$HOME/bin:$JAVA_HOME/bin
 export PATH
