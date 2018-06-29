@@ -8,18 +8,18 @@ usage() {
 	case $1 in
 		"")
 			echo ""
-			echo "Usage: eda-qa.sh [-b 10.236.3.129] [-h|--help]"
+			echo "Usage: eda-qa.sh [-b 10.xxx.xxx.xxx] [-h|--help]"
 			echo ""
 			echo "  This is a quick example of getting EDA topics info with bash"
 			echo "  The kafka scripts are hard-coded in the body"
 			echo ""
 			echo "Params:"
 			echo "      -h|--help: print this help info and exit"
-			echo "      -b|--broker: default is 10.236.3.129"
+			echo "      -b|--broker: default is 10.xxx.xxx.xxx"
       			echo "      -c|--count: get the number of messages for each topic"
 			echo "Examples:"
 			echo ""
-			echo "		./eda-qa.sh -b 10.236.3.129"
+			echo "		./eda-qa.sh -b 10.xxx.xxx.xxx"
 			echo "		./eda-qa.sh -c"
 			echo ""
 			;;
