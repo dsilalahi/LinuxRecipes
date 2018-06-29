@@ -35,7 +35,7 @@ args() {
 
 run_eda_qa() {
 	# init params	
-	broker="10.236.3.129"
+	broker="10.xxx.xxx.xxx"
 	count=0
 		
 	# process args for this block
