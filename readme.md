@@ -1,10 +1,14 @@
+```
 git remote -v # remote verbs
 git remote rename origin {new name} # update remote verbs
+```
 
 # add files to git
+```
 git add file(s)
 git commit -m "comments"
 git push origin master
+```
 
 # remove files to git
 git rm file(s)
