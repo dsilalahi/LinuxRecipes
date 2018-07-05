@@ -1,3 +1,23 @@
+```
+kafka-topics --zookeeper localhost:2181 --list
+kafka-configs --describe --zookeeper localhost:2181 --entity-type brokers
+
+kafka-topics --zookeeper localhost:2181 --create --topic {topic-name} --partitions 3 --replication-factor 1 --if-not-exists
+kafka-topics --zookeeper localhost:2181 --describe --topic {topic-name}
+kafka-topics --delete --zookeeper localhost:2181 --topic {topic-name} --if-exists
+
+kafka-consumer-groups --new-consumer --bootstrap-server localhost:9092 --list
+
+kafka-run-class kafka.tools.DumpLogSegments --print-data-log --files 00000000000000000000.log
+kafka-run-class kafka.tools.DumpLogSegments --files 00000000000000000000.index
+
+kafka-run-class kafka.tools.ConsumerOffsetChecker
+kafka-run-class kafka.tools.VerifyConsumerRebalance
+kafka-run-class kafka.tools.KafkaMigrationTool
+zookeeper-shell localhost:2181 <<< "ls /brokers/ids"
+```
+
+
 ```sh
 $ sudo jps # listing java processes
 
