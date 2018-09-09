@@ -36,3 +36,8 @@ Planning
 Scaling
 
 Resources
+
+### Storage
+How Much | Hardware | Configuration | Partitions
+--- | --- | --- | --- 
+
