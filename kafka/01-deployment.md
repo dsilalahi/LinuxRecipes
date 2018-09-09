@@ -40,7 +40,7 @@ Resources
 ### Storage
 How Much? | Hardware | Configuration | Partitions
 --- | --- | --- | --- 
-Kafka: Throughput * Retention (+ 30% for indices) | Are SSDs worth it? | RAID vs JBOD | Per Topic
-ZooKeeper: very little (< 1GB has to be High Perf) | Is shared storage ok? | XFS or EXT4 | Per Broker
+Kafka: Throughput * Retention (+ 30% for indices) | Are SSDs worth it? not really | RAID (still recommended) vs JBOD | Per Topic (driven by consumption throughput)
+ZooKeeper: very little (< 1GB has to be High Perf) | Is shared storage ok? discouraged | XFS (better out of the box) or EXT4 both are good | Per Broker (4000 partition is pushing it)
 Control Center: Lots (500+ GB) | | Zookeeper log | Total
 Streams: it is complicated (join windows, unique keys). lots of space and monitor the growth | | |
