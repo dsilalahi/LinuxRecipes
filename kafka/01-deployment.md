@@ -38,6 +38,9 @@ Scaling
 Resources
 
 ### Storage
-How Much | Hardware | Configuration | Partitions
+How Much? | Hardware | Configuration | Partitions
 --- | --- | --- | --- 
-
+Kafka: Throughput * Retention | Are SSDs worth it? | RAID vs JBOD | Per Topic
+ZooKeeper: very little | Is shared storage ok? | XFS or EXT4 | Per Broker
+Control Center: Lots | | Zookeeper log | Total
+Streams: it is complicated | | |
