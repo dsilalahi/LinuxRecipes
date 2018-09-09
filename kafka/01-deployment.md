@@ -37,6 +37,22 @@ Scaling
 
 Resources
 
+- CPU
+  - keep an eye on ZK and Kafka
+  - high CPU usually caused by misconfig
+  - or by ... compression, encryption, high request rate
+  
+- Network
+  - 1 GbE = 100MB/s rate (including replication)
+  - leave room for catching up
+  - compress
+
+#### Special Considerations for Clouds
+- virtual cores are relatively weak
+- network is typically weak
+- shared storage is typically awesome
+
+
 ### Storage
 How Much? | Hardware | Configuration | Partitions
 --- | --- | --- | --- 
