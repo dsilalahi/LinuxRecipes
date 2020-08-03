@@ -13,3 +13,6 @@ hdfs dfs -get /{remote folder} /{local folder}
 
 # printout a file in HDFS
 hdfs dfs -cat /{dir_name}/{sub-dir}/sample-file.csv | head -n 20
+
+# file system check
+hdfs fsck /dir/hadoop-test -files -blocks –locations
