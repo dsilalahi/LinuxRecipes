@@ -1,2 +1,0 @@
-# change owner recursively
-chown -R [username] /path

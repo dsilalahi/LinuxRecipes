@@ -1,8 +1,0 @@
-# get a list of users
-cut -d: -f1 /etc/passwd
-
-# add a new user
-sudo adduser new_username
-
-# remove a user
-sudo userdel username

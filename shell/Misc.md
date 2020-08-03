@@ -15,3 +15,4 @@ find -name "*.java" -exec cat {} \;
 ```
 
 
+cut -d: -f1 /etc/passwd
