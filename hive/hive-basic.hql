@@ -15,5 +15,3 @@ LOAD DATA INPATH '/target/folder' OVERWRITE INTO TABLE customers;
 
 SELECT * FROM customers ORDER BY fname;
 
--- to exit out of beeline:
-!q

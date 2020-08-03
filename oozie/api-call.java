@@ -9,13 +9,14 @@ public class myOozieWorkflowJavaAPICall {
 
         String client_url = "http://url:11000/oozie";
         String namenode_base_url = "hdfs://namenode.hadoop.com:8020";
+        String jobtracker_url = "job-tracker:8021";
 
         OozieClient wc = new OozieClient(client_url);
 
         Properties conf = wc.createConfiguration();
 
         conf.setProperty(OozieClient.APP_PATH, namenode_base_url + "/user/uid/oozieProject/javaApplication/workflow.xml");
-        conf.setProperty("jobTracker", "cdh-jt01:8021");
+        conf.setProperty("jobTracker", jobtracker_url);
         conf.setProperty("nameNode", namenode_base_url);
         conf.setProperty("queueName", "default");
         conf.setProperty("airawatOozieRoot", namenode_base_url + "/user/uid/oozieProject/javaApplication");
