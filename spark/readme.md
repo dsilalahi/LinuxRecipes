@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 # Spark
 A fast and general compute engine for Hadoop data. Wide range of applications – ETL, Machine Learning, stream processing,and graph analytics.
 
-=======
-# 
 
 ## why Spark? 
 - M/R forces your pipeline into Map and Reduce steps
@@ -53,4 +50,3 @@ wordcounts_RDD.collect()
 - Never modify RDD in place
 - Transform RDD to another RDD
 - Lazy
->>>>>>> 7d356e78cb9e998ad9ee5410518b51c222a4ac79

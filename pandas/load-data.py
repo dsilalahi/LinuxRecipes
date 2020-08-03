@@ -13,3 +13,11 @@ df = pd.read_csv(‘filename.csv’, parse_dates=[‘Date’], date_parser=d_par
 # load json
 with open('data.json') as f:
     df = json.load(f)
+
+
+# load raw files
+with open(tmp.name, "r") as f:
+    for line in f:
+      	print(line)
+	row_values = line.split("|")  # Split each line by the | character into a list
+      	array.append(row_values[0])

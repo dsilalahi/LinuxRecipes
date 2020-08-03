@@ -71,5 +71,3 @@ public static void assertTableIsExternal(
 }
 ```
 
-http://www.programcreek.com/java-api-examples/index.php?api=org.apache.hadoop.hive.metastore.HiveMetaStoreClient
-

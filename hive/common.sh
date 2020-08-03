@@ -4,7 +4,6 @@ beeline -u jdbc:hive2://
 # to exit out of beeline:
 !q
 
-
 # invoke sql from cli
 hive -e ‘select * from …’
 

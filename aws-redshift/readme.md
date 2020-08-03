@@ -3,7 +3,7 @@
 - default block size: 1 MB
 - Zone Maps: min and max values
 
-sort keys:
+## sort keys:
 	compound
 		columns listed in the sort key definition
 		default
@@ -11,3 +11,5 @@ sort keys:
 		ORDER BY, GROUP BY
 		PARTITION BY, ORDER BY window functions
 	interleaved
+
+

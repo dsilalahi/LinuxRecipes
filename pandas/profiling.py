@@ -8,6 +8,9 @@ df.describe(percentiles=[.01,.05,.95,.99])
 # get data types
 df.info()
 
+# finding correlation
+df.corr()
+
 # get unique values and counts
 df[‘col_name’].unique()
 df[‘col_name’].value_counts()
