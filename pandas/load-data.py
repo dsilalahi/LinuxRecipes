@@ -1,5 +1,9 @@
 import pandas as pd
 
+# 293739 -> 293,739.00
+pd.options.display.float_format = '{:,.2f}'.format
+
+
 cols = [‘first’, ‘last’, ‘mi’, ‘dob’]
 
 # load csv file
@@ -21,3 +25,18 @@ with open(tmp.name, "r") as f:
       	print(line)
 	row_values = line.split("|")  # Split each line by the | character into a list
       	array.append(row_values[0])
+
+
+# get a list of columns
+list(df)
+
+df.head(10) 
+df['col_name'].sum(skipna = True) # sum a column, skip NaN
+df.groupby(['Age_Group']).sum() # group by
+
+print(df.dtypes)
+
+
+# Index
+df.index
+df.set_index('col_name')

@@ -5,6 +5,15 @@ git remote -v # remote verbs
 git remote rename origin {new name} # update remote verbs
 ```
 
+### mirroring
+```
+git clone —bare old-repo.git
+cd old-repo.git
+git push —mirror new-repo.git
+cd ..
+rm -rf old-repo.git
+```
+
 ### add files to git
 ```
 git add file(s)

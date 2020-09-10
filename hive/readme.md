@@ -29,7 +29,6 @@ Vectorized query execution improves performance of operations like scans, aggreg
 
 ```sh
 set hive.vectorized.execution.enabled = true;
-
 set hive.vectorized.execution.reduce.enabled = true;
 ```
 
@@ -46,8 +45,12 @@ set hive.stats.fetch.column.stats=true;
 set hive.stats.fetch.partition.stats=true;
 ```
 
-
 Modes in Hive
 * Embedded - metastore service runs in the same JVM as Hive serivce (derby db)
 * Local - metastore service runs in the same JVM as Hive serivce; derby database runs on a separate JVM service; metastore connects to DB via JDBC
 * Remote - metastore service runs on its own seperate JVM; metastore and DB run on their own services
+
+
+## Performance
+- use ORC (Optimized Row Columnar) file format
+- use Tez execution engine (on top of YARN)

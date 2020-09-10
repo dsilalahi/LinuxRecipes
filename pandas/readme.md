@@ -20,3 +20,4 @@ https://seer.cancer.gov/faststats/index.html
 https://www.bls.gov/data/
 http://archive.ics.uci.edu/ml/datasets/Dow+Jones+Index
 https://www.kaggle.com/c/walmart-recruiting-store-sales-forecasting/data
+https://tradingeconomics.com/

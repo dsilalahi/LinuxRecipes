@@ -2,6 +2,9 @@
 hdfs dfs -ls /{dir_name}
 hdfs dfs -ls /user
 
+# by URI
+hdfs://nnhost:port/file...
+
 # create a directory in HDFS
 hdfs dfs -mkdir /{dir name}
 
@@ -16,3 +19,7 @@ hdfs dfs -cat /{dir_name}/{sub-dir}/sample-file.csv | head -n 20
 
 # file system check
 hdfs fsck /dir/hadoop-test -files -blocks –locations
+
+
+# delete a directory and all its contents
+hdfs dfs -rm -r <dir>
