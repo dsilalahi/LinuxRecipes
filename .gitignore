@@ -13,3 +13,4 @@ terraform.tfstate
 .auto.tfvars.json
 terraform.tfvars
 terraform.tfvars.json
+secret.md
