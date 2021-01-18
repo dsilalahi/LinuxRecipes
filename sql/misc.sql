@@ -21,3 +21,14 @@ FROM Worker w
 WHERE Salary IN (
 	SELECT MAX(Salary) FROM Worker w2 GROUP BY Department
 )
+
+
+# add/substract
+select stock_name
+    , sum(case 
+        when operation = "Buy" then -price
+        when operation = "Sell" then price
+        end)
+    as capital_gain_loss
+from stocks
+group by stock_name
