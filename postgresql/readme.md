@@ -1,10 +1,5 @@
 
 
-brew update
-brew doctor 
-brew install postgresql
-
-
 ```sh
 # create a dir
 mkdir postdata

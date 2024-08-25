@@ -10,7 +10,7 @@ select distinct a.tbl_id,a.tbl_name
     from TBLS a
         join PARTITIONS c on (a.TBL_ID=c.TBL_ID)
         join SDS b on (c.SD_ID=b.SD_ID)
- where b.location like '%sbx.db%' and a.DB_ID=1;
+ where b.location like '%xxx.db%' and a.DB_ID=1;
 ```
 
 ```sql
