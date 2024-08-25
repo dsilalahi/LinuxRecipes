@@ -23,7 +23,7 @@ WHERE Salary IN (
 )
 
 
-# add/substract
+-- add/substract
 select stock_name
     , sum(case 
         when operation = "Buy" then -price
