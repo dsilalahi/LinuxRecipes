@@ -25,3 +25,23 @@ Note: EMR is a single AZ service
 
 HDFS block size: 64 MB (default)
 	- Replication factor - hdfs-site.xml
+
+```sh
+$hadoop fs -ls
+$hadoop fs -stat %r defaultblock.txt
+$hadoop fs -setrep -R -w 2 defaultblock.txt
+```
+
+### Storage Options
+- Instance Store
+	- High I/O perf
+	- High IOPS at low cost
+	- D2 and I3
+- EBS for HDFS
+- EMR File System (EMRFS)
+	- HDFS on S3
+	- Reliability, durability and scalability of S3
+	- resize and terminate EMR clusters without losing data
+	- multiple clusters to point to the same EMRFS
+	- can use EMRFS and HDFS together
+	- copy data from S3 to HDFS using S3DistCp
