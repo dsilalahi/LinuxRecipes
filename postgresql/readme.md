@@ -14,7 +14,7 @@ pg_ctl -D postdata -l logfile start
 
 psql postgres
 
-CREATE USER dsilalahi WITH PASSWORD 'admin$1234';
+CREATE USER [username] WITH PASSWORD 'password';
 
 
 pg_ctl -D /usr/local/var/postgres start
