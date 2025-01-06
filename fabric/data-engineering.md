@@ -112,17 +112,15 @@ Sources
 - **Monitor Resource Utilization:** Continuously monitor CPU, memory, and disk usage to avoid resource contention issues in clusters [6].
 
 ---
-
-By following these tips, you can efficiently identify, debug, and resolve issues in Spark data pipelines while improving their overall performance and reliability.
-
 Sources
-[1] Troubleshooting Apache Spark - Job, Pipeline, & Cluster Level https://www.unraveldata.com/resources/troubleshooting-apache-spark/
-[2] The Do's and Don'ts of Apache Spark - Best Practices for Efficient ... https://www.chashnikov.dev/post/the-do-s-and-don-ts-of-apache-spark-best-practices-for-efficient-data-processing
-[3] A Quick Guide to Troubleshooting Data Pipelines - Wizeline https://www.wizeline.com/guide-to-troubleshooting-data-pipelines/
-[4] 6 Best Practices to Build Data Pipelines - DZone https://dzone.com/articles/6-best-practices-to-build-data-pipelines
-[5] Tricks to Boost Your Spark Pipeline Performance | by Yu Zhou https://towardsdatascience.com/my-tricks-for-spark-performance-optimization-3955857ee2e1?gi=6797d72cdc86
-[6] Troubleshooting Spark Pools using OCI Dataflow - Oracle Blogs https://blogs.oracle.com/dataintegration/post/troubleshooting-spark-pools-using-oci-dataflow
-[7] Re: Data Pipeline Fail on Notebook due to unexplainable Spark Error https://community.fabric.microsoft.com/t5/Data-Pipeline/Data-Pipeline-Fail-on-Notebook-due-to-unexplainable-Spark-Error/m-p/3644001
+
+1. Troubleshooting Apache Spark - Job, Pipeline, & Cluster Level https://www.unraveldata.com/resources/troubleshooting-apache-spark/
+2. The Do's and Don'ts of Apache Spark - Best Practices for Efficient ... https://www.chashnikov.dev/post/the-do-s-and-don-ts-of-apache-spark-best-practices-for-efficient-data-processing
+3. A Quick Guide to Troubleshooting Data Pipelines - Wizeline https://www.wizeline.com/guide-to-troubleshooting-data-pipelines/
+4. 6 Best Practices to Build Data Pipelines - DZone https://dzone.com/articles/6-best-practices-to-build-data-pipelines
+5. Tricks to Boost Your Spark Pipeline Performance | by Yu Zhou https://towardsdatascience.com/my-tricks-for-spark-performance-optimization-3955857ee2e1?gi=6797d72cdc86
+6. Troubleshooting Spark Pools using OCI Dataflow - Oracle Blogs https://blogs.oracle.com/dataintegration/post/troubleshooting-spark-pools-using-oci-dataflow
+7. Re: Data Pipeline Fail on Notebook due to unexplainable Spark Error https://community.fabric.microsoft.com/t5/Data-Pipeline/Data-Pipeline-Fail-on-Notebook-due-to-unexplainable-Spark-Error/m-p/3644001
 
 
 
