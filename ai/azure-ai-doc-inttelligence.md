@@ -85,12 +85,12 @@ Below is a breakdown of the key aspects to consider:
 ---
 
 ## 2. **Project Scope**
-   - **Prebuilt vs. Custom Models**:
-     - Assess whether prebuilt models suffice or if custom models need to be trained.
-   - **Data Labeling Needs**:
-     - If custom models are required, estimate the time and resources needed for labeling training data.
-   - **Integration Requirements**:
-     - Identify the systems or workflows the solution will integrate with (e.g., ERP, CRM, RPA tools).
+  - **Data Labeling Needs**: If custom models are required, estimate the time and resources needed for labeling training data.
+   - **Integration Requirements**: Identify the systems or workflows the solution will integrate with (e.g., ERP, CRM, RPA tools).
+- **Prebuilt vs. Custom Models**:
+  - **Prebuilt Models** often require minimal configuration but are limited to specific document types.
+  - **Custom Models** need labeled training data and time to iteratively refine models.
+- **Labeling Effort**: If creating custom models, estimate how much effort is needed to label documents for training.
 
 ---
 
@@ -103,61 +103,73 @@ Below is a breakdown of the key aspects to consider:
 - **Document Quality**: Blurry or skewed scans, handwritten data, and low-resolution images can affect accuracy.
 - **Language and Localization**: Ensure that languages in your documents are supported. Some languages may need specialized handling.
 - **Data Cleaning Requirements**: Additional preprocessing or post-processing might be necessary for noisy data.
+- **Number of Documents**: High volumes may require scaling considerations and can impact cost significantly.
+- **Concurrent Processing**: Determine if you need real-time or batch processing and how many documents need to be processed simultaneously.
+- **Performance Requirements**: Identify SLAs or expectations around turnaround times.
 
 ---
 
 ## 4. **Development Effort**
-   - **Model Customization**:
-     - Estimate time for creating and training custom models.
-   - **Integration Development**:
-     - Plan the effort required to integrate Azure AI Document Intelligence with other systems.
-   - **Workflow Automation**:
-     - Determine the complexity of automating document processing workflows.
-   - **Testing**:
-     - Allocate time for testing accuracy and performance.
-   - **Optimization**:
-     - Account for iterative improvements based on feedback.
+   - **Model Customization**: Estimate time for creating and training custom models.
+   - **Integration Development**: Plan the effort required to integrate Azure AI Document Intelligence with other systems.
+   - **Workflow Automation**: Determine the complexity of automating document processing workflows.
+   - **Testing**: Allocate time for testing accuracy and performance.
+   - **Optimization**: Account for iterative improvements based on feedback.
+- **Application Architecture**: Consider how Document Intelligence integrates with your existing systems, databases, or applications.
+- **API Calls and Orchestration**: Estimate engineering effort to develop and maintain pipelines (e.g., Azure Logic Apps, Azure Functions).
+- **Security and Compliance**: Additional work may be needed to ensure compliance with data protection standards (e.g., HIPAA, GDPR).
+
+- **Accuracy Requirements**: How precise must the extracted data be? Higher accuracy typically means more model tuning and test cycles.
+- **QA/Testing Resources**: Plan for iterative testing to validate extraction results and refine models.
+- **Pilot/Proof of Concept**: Building a pilot phase can help identify unknown complexities before full rollout.
+
 
 ---
 
-## 5. **Infrastructure and Costs**
-   - **Azure Resource Setup**:
-     - Consider time for setting up Azure services (e.g., Azure Form Recognizer, storage, compute).
-   - **Resource Scaling**:
-     - Plan for potential scaling needs based on document volume.
+## 5. **Infrastructure and Cost Considerations**
+   - **Azure Resource Setup**: Consider time for setting up Azure services (e.g., Azure Form Recognizer, storage, compute).
+   - **Resource Scaling**: Plan for potential scaling needs based on document volume.
    - **Cost Estimation**:
      - Calculate costs for processing documents using the Azure pricing calculator.
        - **Prebuilt Models**: Charged per page processed.
        - **Custom Models**: Includes charges for training, storage, and processing.
 
+- **Azure Pricing Model**: Review the **pay-as-you-go** pricing based on the number of pages/documents processed.
+- **Storage and Network**: Factor in storage costs for documents and potential data transfer fees.
+- **Development and Maintenance**:
+  - **Initial Setup**: Model configuration, custom model training, and integration can incur upfront costs.
+  - **Ongoing Tuning**: Periodic retraining and maintenance may be required if document formats or content change over time.
+- **Azure Consumption Estimates**: Use the Azure Calculator to project costs for your expected volume.
+
+
 ---
 
 ## 6. **Team Skills and Training**
-   - **Skill Assessment**:
-     - Determine if the team has expertise in Azure AI Document Intelligence or if training is needed.
-   - **Knowledge Gaps**:
-     - Allocate time for learning Azure services, APIs, and custom model development.
+- **Skill Assessment**: Determine if the team has expertise in Azure AI Document Intelligence or if training is needed.
+- **Knowledge Gaps**: Allocate time for learning Azure services, APIs, and custom model development.
+- **Data Scientists/ML Engineers**: Experience with AI/ML can speed up custom model development and optimization.
+- **Developers**: Integration into existing workflows or applications requires developer resources.
+- **Project Management**: Coordination across teams for data collection, labeling, testing, and deployment.
 
 ---
 
 ## 7. **Timeline and Milestones**
-   - Define key milestones, such as:
-     - Requirement gathering and analysis.
-     - Model selection or training.
-     - System integration.
-     - Testing and validation.
-     - Deployment and scaling.
-   - Plan for contingencies, such as unexpected delays in document preparation or API limitations.
+- **Discovery and Analysis**: Time to collect requirements, sample documents, and define success criteria.
+- **Model Development and Training**: Iterative training and tuning cycles for custom models.
+- **Integration and Deployment**: Building and testing integrations, setting up infrastructure, and deployment pipelines.
+- **User Acceptance Testing (UAT)**: Ensure the solution meets business needs through user feedback loops.
 
 ---
 
 ## 8. **Post-Deployment Activities**
-   - **Monitoring and Maintenance**:
-     - Estimate time for monitoring model performance and API usage.
-   - **Feedback Loop**:
-     - Allocate resources for retraining custom models or adjusting configurations based on user feedback.
-   - **Support**:
-     - Plan for ongoing support and troubleshooting.
+   - **Monitoring and Maintenance**: Estimate time for monitoring model performance and API usage.
+   - **Feedback Loop**: Allocate resources for retraining custom models or adjusting configurations based on user feedback.
+   - **Support**: Plan for ongoing support and troubleshooting.
+
+## 9. Risks and Mitigations
+- **Model Drift**: Document formats or standards may change over time, requiring updates to custom models.
+- **Data Security**: Sensitive or confidential documents require robust security measures to protect data in transit and at rest.
+- **Regulatory Compliance**: Certain industries have strict data processing regulations; plan for audits and compliance checks.
 
 ---
 
@@ -171,61 +183,3 @@ Below is a breakdown of the key aspects to consider:
 ---
 
 
-## 3. Model Selection and Training
-- **Prebuilt vs. Custom Models**:
-  - **Prebuilt Models** often require minimal configuration but are limited to specific document types.
-  - **Custom Models** need labeled training data and time to iteratively refine models.
-- **Labeling Effort**: If creating custom models, estimate how much effort is needed to label documents for training.
-
----
-
-## 4. Volume and Throughput
-- **Number of Documents**: High volumes may require scaling considerations and can impact cost significantly.
-- **Concurrent Processing**: Determine if you need real-time or batch processing and how many documents need to be processed simultaneously.
-- **Performance Requirements**: Identify SLAs or expectations around turnaround times.
-
----
-
-## 5. Integration and Workflow
-- **Application Architecture**: Consider how Document Intelligence integrates with your existing systems, databases, or applications.
-- **API Calls and Orchestration**: Estimate engineering effort to develop and maintain pipelines (e.g., Azure Logic Apps, Azure Functions).
-- **Security and Compliance**: Additional work may be needed to ensure compliance with data protection standards (e.g., HIPAA, GDPR).
-
----
-
-## 6. Testing and Validation
-- **Accuracy Requirements**: How precise must the extracted data be? Higher accuracy typically means more model tuning and test cycles.
-- **QA/Testing Resources**: Plan for iterative testing to validate extraction results and refine models.
-- **Pilot/Proof of Concept**: Building a pilot phase can help identify unknown complexities before full rollout.
-
----
-
-## 7. Cost Considerations
-- **Azure Pricing Model**: Review the **pay-as-you-go** pricing based on the number of pages/documents processed.
-- **Storage and Network**: Factor in storage costs for documents and potential data transfer fees.
-- **Development and Maintenance**:
-  - **Initial Setup**: Model configuration, custom model training, and integration can incur upfront costs.
-  - **Ongoing Tuning**: Periodic retraining and maintenance may be required if document formats or content change over time.
-- **Azure Consumption Estimates**: Use the Azure Calculator to project costs for your expected volume.
-
----
-
-## 8. Team Expertise and Training
-- **Data Scientists/ML Engineers**: Experience with AI/ML can speed up custom model development and optimization.
-- **Developers**: Integration into existing workflows or applications requires developer resources.
-- **Project Management**: Coordination across teams for data collection, labeling, testing, and deployment.
-
----
-
-## 9. Timeline Planning
-- **Discovery and Analysis**: Time to collect requirements, sample documents, and define success criteria.
-- **Model Development and Training**: Iterative training and tuning cycles for custom models.
-- **Integration and Deployment**: Building and testing integrations, setting up infrastructure, and deployment pipelines.
-- **User Acceptance Testing (UAT)**: Ensure the solution meets business needs through user feedback loops.
-
----
-
-## 10. Risks and Mitigations
-- **Model Drift**: Document formats or standards may change over time, requiring updates to custom models.
-- **Data Security**: Sensitive or confidential documents require robust security measures to protect data in transit and at rest.
-- **Regulatory Compliance**: Certain industries have strict data processing regulations; plan for audits and compliance checks.
