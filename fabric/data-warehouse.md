@@ -55,12 +55,10 @@
 
 ---
 
-By adhering to these best practices, organizations can build a robust Microsoft Fabric Data Warehouse that supports scalable, secure, and high-performance analytics.
-
 Sources
-[1] Building a Data Warehouse With Microsoft Fabric: A Guide https://azure.folio3.com/blog/guide-to-microsoft-fabric-data-warehouse/
-[2] A Practical Guide to Implement End-to-End Data Warehousing PoC ... https://techcommunity.microsoft.com/blog/microsoftmissioncriticalblog/a-practical-guide-to-implement-end-to-end-data-warehousing-poc-using-microsoft-f/4360645
-[3] Fabric Data Warehouse performance guidelines - Microsoft Learn https://learn.microsoft.com/hi-in/fabric/data-warehouse/guidelines-warehouse-performance
-[4] Data warehouse tutorial - introduction - Microsoft Fabric https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-introduction
-[5] How to build a Data Warehouse in Microsoft Fabric - Confiz https://www.confiz.com/blog/how-to-build-a-data-warehouse-in-microsoft-fabric-a-guide-for-data-professionals/
-[6] Best Practices for Data Warehouse Security in Microsoft Fabric https://azuredataconf.com
+1. Building a Data Warehouse With Microsoft Fabric: A Guide https://azure.folio3.com/blog/guide-to-microsoft-fabric-data-warehouse/
+2. A Practical Guide to Implement End-to-End Data Warehousing PoC ... https://techcommunity.microsoft.com/blog/microsoftmissioncriticalblog/a-practical-guide-to-implement-end-to-end-data-warehousing-poc-using-microsoft-f/4360645
+3. Fabric Data Warehouse performance guidelines - Microsoft Learn https://learn.microsoft.com/hi-in/fabric/data-warehouse/guidelines-warehouse-performance
+4. Data warehouse tutorial - introduction - Microsoft Fabric https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-introduction
+5. How to build a Data Warehouse in Microsoft Fabric - Confiz https://www.confiz.com/blog/how-to-build-a-data-warehouse-in-microsoft-fabric-a-guide-for-data-professionals/
+6. Best Practices for Data Warehouse Security in Microsoft Fabric https://azuredataconf.com
