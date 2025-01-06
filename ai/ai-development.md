@@ -15,3 +15,11 @@ High level steps of implementing AI:
 4. Inference/Deployment
     The trained model is deployed to allow inference/predictions. Generetes output based on new, unseed data to solve a domain-specific problem. 
     Tech: NVidia Triton Inference Server
+
+
+### Deep Learning Workflow
+
+## Classification
+- AlexNet 
+    - convolutional neural network image classification task
+    - comprised of nodes that implement simple generalized algorithms
