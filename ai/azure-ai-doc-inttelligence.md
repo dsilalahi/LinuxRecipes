@@ -95,19 +95,14 @@ Below is a breakdown of the key aspects to consider:
 ---
 
 ## 3. **Technical Considerations**
-    - **Data Preparation**:
-        - Evaluate the effort required to prepare documents for processing (e.g., scanning, cleaning).
-    - **API Usage**:
-        - Plan for API integrations and usage limits based on the estimated volume.
-    - **Scalability**:
-        - Determine if the solution will need to scale for peak workloads.
-    - **Error Handling**:
-        - Account for error handling, retries, and exception workflows.
-    - **Data Security**: 
-        - Ensure compliance with data privacy and security requirements.
-    - **Document Quality**: Blurry or skewed scans, handwritten data, and low-resolution images can affect accuracy.
-    - **Language and Localization**: Ensure that languages in your documents are supported. Some languages may need specialized handling.
-    - **Data Cleaning Requirements**: Additional preprocessing or post-processing might be necessary for noisy data.
+- **Data Preparation**: Evaluate the effort required to prepare documents for processing (e.g., scanning, cleaning).
+- **API Usage**: Plan for API integrations and usage limits based on the estimated volume.
+- **Scalability**: Determine if the solution will need to scale for peak workloads.
+- **Error Handling**: Account for error handling, retries, and exception workflows.
+- **Data Security**: Ensure compliance with data privacy and security requirements.
+- **Document Quality**: Blurry or skewed scans, handwritten data, and low-resolution images can affect accuracy.
+- **Language and Localization**: Ensure that languages in your documents are supported. Some languages may need specialized handling.
+- **Data Cleaning Requirements**: Additional preprocessing or post-processing might be necessary for noisy data.
 
 ---
 
