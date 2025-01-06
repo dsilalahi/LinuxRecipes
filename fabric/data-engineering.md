@@ -57,23 +57,19 @@
 
 ---
 
-By following these best practices, organizations can build robust, scalable, and efficient data engineering solutions using Microsoft Fabric.
-
 Sources
-[1] Best practices for lifecycle management in Fabric - Microsoft Learn https://learn.microsoft.com/en-us/fabric/cicd/best-practices-cicd
-[2] Implementing Data Engineering Solutions Using Microsoft Fabric https://www.testpreptraining.com/tutorial/exam-dp-700-implementing-data-engineering-solutions-using-microsoft-fabric/
-[3] Microsoft Fabric -Data engineer - YouTube https://www.youtube.com/watch?v=IQQQchLo5mE
-[4] Best Practices for Optimizing Performance in Microsoft Fabric https://www.cloudthat.com/resources/blog/best-practices-for-optimizing-performance-in-microsoft-fabric
-[5] Best Practice for Lakehouse Strategy - Microsoft Fabric Community https://community.fabric.microsoft.com/t5/Data-Engineering/Best-Practice-for-Lakehouse-Strategy/td-p/4129699
-[6] End to End Data Project with Microsoft Fabric - YouTube https://www.youtube.com/watch?v=Av44Nrhl05s
-[7] Microsoft Fabric Data Engineering - YouTube https://www.youtube.com/playlist?list=PLlqsZd11LpUHKLILXjfW5ORjNiksC3GWZ
-[8] Best implementation practices for Microsoft Fabric - LinkedIn https://www.linkedin.com/pulse/best-implementation-practices-microsoft-fabric-ympof
-[9] Fabric Best Practices Question for ERP System Data : r/MicrosoftFabric https://www.reddit.com/r/MicrosoftFabric/comments/14vtvy1/fabric_best_practices_question_for_erp_system_data/
-[10] What is Data engineering in Microsoft Fabric? https://learn.microsoft.com/vi-vn/fabric/data-engineering/data-engineering-overview
-[11] What's new and planned for Fabric Data Engineering in Microsoft ... https://learn.microsoft.com/en-us/fabric/release-plan/data-engineering
-[12] Data Engineering in Microsoft Fabric documentation https://learn.microsoft.com/et-ee/fabric/data-engineering/
-
-
+1. Best practices for lifecycle management in Fabric - Microsoft Learn https://learn.microsoft.com/en-us/fabric/cicd/best-practices-cicd
+2. Implementing Data Engineering Solutions Using Microsoft Fabric https://www.testpreptraining.com/tutorial/exam-dp-700-implementing-data-engineering-solutions-using-microsoft-fabric/
+3. Microsoft Fabric -Data engineer - YouTube https://www.youtube.com/watch?v=IQQQchLo5mE
+4. Best Practices for Optimizing Performance in Microsoft Fabric https://www.cloudthat.com/resources/blog/best-practices-for-optimizing-performance-in-microsoft-fabric
+5. Best Practice for Lakehouse Strategy - Microsoft Fabric Community https://community.fabric.microsoft.com/t5/Data-Engineering/Best-Practice-for-Lakehouse-Strategy/td-p/4129699
+6. End to End Data Project with Microsoft Fabric - YouTube https://www.youtube.com/watch?v=Av44Nrhl05s
+7. Microsoft Fabric Data Engineering - YouTube https://www.youtube.com/playlist?list=PLlqsZd11LpUHKLILXjfW5ORjNiksC3GWZ
+8. Best implementation practices for Microsoft Fabric - LinkedIn https://www.linkedin.com/pulse/best-implementation-practices-microsoft-fabric-ympof
+9. Fabric Best Practices Question for ERP System Data : r/MicrosoftFabric https://www.reddit.com/r/MicrosoftFabric/comments/14vtvy1/fabric_best_practices_question_for_erp_system_data/
+10. What is Data engineering in Microsoft Fabric? https://learn.microsoft.com/vi-vn/fabric/data-engineering/data-engineering-overview
+11. What's new and planned for Fabric Data Engineering in Microsoft ... https://learn.microsoft.com/en-us/fabric/release-plan/data-engineering
+12. Data Engineering in Microsoft Fabric documentation https://learn.microsoft.com/et-ee/fabric/data-engineering/
 
 
 ### Troubleshooting Spark Data Pipelines
@@ -179,20 +175,18 @@ Sources
 
 ---
 
-By applying these techniques, you can troubleshoot Spark SQL issues more effectively while improving overall query performance and reliability.
-
 Sources
-[1] Troubleshooting Spark Issues — Qubole Data Service documentation https://docs.qubole.com/en/latest/troubleshooting-guide/spark-ts/troubleshoot-spark.html
-[2] Performance Tuning - Spark 4.0.0-preview2 Documentation https://spark.apache.org/docs/4.0.0-preview2/sql-performance-tuning.html
-[3] Spark SQL Optimization - Understanding the Catalyst ... - DataFlair https://data-flair.training/blogs/spark-sql-optimization/
-[4] Use the Spark EXPLAIN statement to troubleshoot Spark SQL https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark-troubleshooting-explain.html
-[5] Spark SQL Performance Tuning by Configurations - LinkedIn https://www.linkedin.com/pulse/spark-sql-performance-tuning-configurations-vignesan-saravanan-8hamc
-[6] What is the Catalyst Optimizer? - Databricks https://www.databricks.com/glossary/catalyst-optimizer
-[7] What to Learn About Spark Performance Tuning? : r/dataengineering https://www.reddit.com/r/dataengineering/comments/13rts0c/what_to_learn_about_spark_performance_tuning/
-[8] Spark Performance Tuning & Best Practices https://sparkbyexamples.com/spark/spark-performance-tuning/
-[9] [PDF] SQL QUERY EXECUTION OPTIMIZATION ON SPARK SQL https://ceur-ws.org/Vol-3041/445-449-paper-82.pdf
-[10] Spark Troubleshooting - Lucidworks Documentation https://doc.lucidworks.com/how-to/749/
-[11] Apache Spark Performance Tuning: 7 Optimization Tips (2024) https://www.chaosgenius.io/blog/spark-performance-tuning/
-[12] Solved: Facing issues in running the converted code in spa... - 6633 https://community.databricks.com/t5/data-engineering/facing-issues-in-running-the-converted-code-in-spark-sql/td-p/6633
-[13] Speed up your spark queries in 15 minutes | by Junrong Lau https://blog.devgenius.io/speed-up-your-spark-queries-in-15-minutes-4a8da88942cf?gi=d06ca7c45c69
-[14] Performance Tuning - Spark 3.5.4 Documentation https://spark.apache.org/docs/latest/sql-performance-tuning.html
+1. Troubleshooting Spark Issues — Qubole Data Service documentation https://docs.qubole.com/en/latest/troubleshooting-guide/spark-ts/troubleshoot-spark.html
+2. Performance Tuning - Spark 4.0.0-preview2 Documentation https://spark.apache.org/docs/4.0.0-preview2/sql-performance-tuning.html
+3. Spark SQL Optimization - Understanding the Catalyst ... - DataFlair https://data-flair.training/blogs/spark-sql-optimization/
+4. Use the Spark EXPLAIN statement to troubleshoot Spark SQL https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark-troubleshooting-explain.html
+5. Spark SQL Performance Tuning by Configurations - LinkedIn https://www.linkedin.com/pulse/spark-sql-performance-tuning-configurations-vignesan-saravanan-8hamc
+6. What is the Catalyst Optimizer? - Databricks https://www.databricks.com/glossary/catalyst-optimizer
+7. What to Learn About Spark Performance Tuning? : r/dataengineering https://www.reddit.com/r/dataengineering/comments/13rts0c/what_to_learn_about_spark_performance_tuning/
+8. Spark Performance Tuning & Best Practices https://sparkbyexamples.com/spark/spark-performance-tuning/
+9. [PDF] SQL QUERY EXECUTION OPTIMIZATION ON SPARK SQL https://ceur-ws.org/Vol-3041/445-449-paper-82.pdf
+10. Spark Troubleshooting - Lucidworks Documentation https://doc.lucidworks.com/how-to/749/
+11. Apache Spark Performance Tuning: 7 Optimization Tips (2024) https://www.chaosgenius.io/blog/spark-performance-tuning/
+12. Solved: Facing issues in running the converted code in spa... - 6633 https://community.databricks.com/t5/data-engineering/facing-issues-in-running-the-converted-code-in-spark-sql/td-p/6633
+13. Speed up your spark queries in 15 minutes | by Junrong Lau https://blog.devgenius.io/speed-up-your-spark-queries-in-15-minutes-4a8da88942cf?gi=d06ca7c45c69
+14. Performance Tuning - Spark 3.5.4 Documentation https://spark.apache.org/docs/latest/sql-performance-tuning.html
